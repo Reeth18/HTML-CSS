@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        *{
+            background-color: aliceblue;
+        }
+        h1{
+            font-size: xx-large;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Bootstrap Beginning</h1>
+    <!-- Hierarchy is
+    Container
+        Row
+            Column -->
+        <!-- 
+            Bootstrap’s grid system can adapt across all six default breakpoints, and any breakpoints you customize. The six default grid tiers are as follow:
+            Breakpoints:-
+                Extra small (xs)
+                Small (sm)
+                Medium (md)
+                Large (lg)
+                Extra large (xl)
+                Extra extra large (xxl)
+         -->
+    <div class="container">
+        <div class="row">
+          <div class="col-8" style="border: 1px solid red">
+            Column Name
+          </div>
+          <div class="col" style="border: 1px solid red">
+            Column Name
+          </div>
+          <div class="col" style="border: 1px solid red">
+            Column Name
+          </div>
+        </div>
+        <div class="row">
+            <div class="col" style="border: 1px solid red">
+              Column Name New
+            </div>
+            <div class="col-sm-auto" style="border: 1px solid red">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam accusamus officia voluptatibus, fugit vel sequi aperiam cupiditate ratione eum alias eaque inventore vitae temporibus pariatur impedit dolorum cumque. Cupiditate corrupti illum quas laudantium vitae porro aut, dignissimos aperiam esse dolore dolor! Mollitia nam voluptas nisi laboriosam molestiae suscipit numquam velit deleniti blanditiis, quasi accusantium at voluptatibus pariatur corporis officiis necessitatibus.</p>
+            </div>
+            <div class="col" style="border: 1px solid red">
+              Column Name
+            </div>
+          </div>
+    </div>
+</body>
+</html>
