@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <title>My Portfolio Website</title>
+</head>
+  <style>
+    /*pseudo class in css*/
+    .nav-link:hover{
+      color: pink;
+    }
+    .social-icons li{
+      display: inline-block;
+      margin-right: 12px;
+    }
+    .social-icons li a{
+      font-size: 30px;
+      text-decoration: none;
+      color: antiquewhite;
+    }
+    .social-icons li a:hover{ 
+      transition: transform ease-out 0.8s;
+      transform: scale(1.5);     
+    }
+    #home{
+      padding: 10px;
+    }
+    #submit-btn:hover{
+      background-color: lightgreen;
+      border: 1px solid darkgreen;
+      color: darkgreen;
+    }
+    </style>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class = "navbar navbar-expand-lg navbar-dark bg-dark" style="height: 120px;">
+  <div class="container">
+    <!-- Nav-bar brand pushes to the left -->
+    <a class ="navbar-brand fw-b fs-1" href="#">MY PORTFOLIO</a>
+    <!-- Collapse keeping the things in the same line -->
+    <div class="collapse navbar-collapse">
+      <!-- ms-auto: automatically sets a margin on the right side -->
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item fw-b fs-5"><a class="nav-link" href="#home">Home</a></li>
+      <li class="nav-item fw-b fs-5"><a class="nav-link" href="#about">About</a></li>
+      <li class="nav-item fw-b fs-5"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+      <li class="nav-item fw-b fs-5"><a class="nav-link" href="#contact">Contact</a></li>
+    </ul>
+    </div>
+  </div>    
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="text-center bg-success">
+    <h1 class="display-3">Welcome to My Portfolio</h1>
+    <p class="lead fs-2">Let me showcase my skills and projects to you.</p>
+    <ul class ="social-icons ">
+    <li>
+      <a class ="fab fa-facebook " href="#"></a>
+    </li>
+    <li>
+      <a class ="fab fa-instagram" href="#"></a>
+    </li>
+    <li>
+      <a class ="fab fa-twitter" href="#"></a>
+    </li>
+    <li>
+      <a class ="fab fa-linkedin-in" href="#"></a>
+    </li>
+    <li>
+      <a class ="fab fa-github" href="#"></a>
+    </li>
+    </ul>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section py-5">
+    <div class="container">
+    <div class="row">
+    <div class="col-lg-6">
+    <h2>About Me</h2>
+    <div class="table-responsive">
+      <!-- <table class="table table-dark table-hover"> -->
+          <table class="table table-info">
+          <tr>
+            <th class="text-end col-4" scope="row">Name:</th>            
+            <td >Rayith Bose</td>
+          </tr>
+          <tr>
+            <th class="text-end col-4" scope="row">Skills:</th>
+            <td >Python, Java, SQL</td>
+          </tr>
+          <tr>
+            <th class="text-end col-4" scope="row">Qualification:</th>
+            <td >B.tech</td>
+          </tr>
+
+        </table>
+      </div>
+    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget scelerisque ante. Phasellus non leo id est commodo efficitur. Nunc sed purus sem. In hac habitasse platea dictumst.</p> -->
+    </div>
+    <div class="col-lg-6">
+    <img class="img-fluid rounded" src=".\MyPic.png.jpg" alt="Profile Picture" style="height: 500px; width: 500px;">
+    </div>
+    </div>
+    </div>
+  </section>
+
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">My Projects</h2>
+      <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card">
+                  <img
+                    src="https://img.freepik.com/free-vector/colourful-illustration-programmer-working_23-2148281410.jpg?w=740&t=st=1687616475~exp=1687617075~hmac=f846239451c8e743c9f42072a8c9c432bfb2b0d7e9ed8a0983365bbef4b85ae3"
+                    class="card-img-top" alt="Project 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Project 1</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img
+                    src="https://img.freepik.com/free-vector/colourful-illustration-programmer-working_23-2148281410.jpg?w=740&t=st=1687616475~exp=1687617075~hmac=f846239451c8e743c9f42072a8c9c432bfb2b0d7e9ed8a0983365bbef4b85ae3"
+                    class="card-img-top" alt="Project 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Project 2</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img
+                    src="https://img.freepik.com/free-vector/colourful-illustration-programmer-working_23-2148281410.jpg?w=740&t=st=1687616475~exp=1687617075~hmac=f846239451c8e743c9f42072a8c9c432bfb2b0d7e9ed8a0983365bbef4b85ae3"
+                    class="card-img-top" alt="Project 3">
+                  <div class="card-body">
+                    <h5 class="card-title">Project 3</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card">
+                  <img
+                    src="https://img.freepik.com/free-vector/colourful-illustration-programmer-working_23-2148281410.jpg?w=740&t=st=1687616475~exp=1687617075~hmac=f846239451c8e743c9f42072a8c9c432bfb2b0d7e9ed8a0983365bbef4b85ae3"
+                    class="card-img-top" alt="Project 4">
+                  <div class="card-body">
+                    <h5 class="card-title">Project 4</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img
+                    src="https://img.freepik.com/free-vector/colourful-illustration-programmer-working_23-2148281410.jpg?w=740&t=st=1687616475~exp=1687617075~hmac=f846239451c8e743c9f42072a8c9c432bfb2b0d7e9ed8a0983365bbef4b85ae3"
+                    class="card-img-top" alt="Project 5">
+                  <div class="card-body">
+                    <h5 class="card-title">Project 5</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img
+                    src="https://img.freepik.com/free-vector/colourful-illustration-programmer-working_23-2148281410.jpg?w=740&t=st=1687616475~exp=1687617075~hmac=f846239451c8e743c9f42072a8c9c432bfb2b0d7e9ed8a0983365bbef4b85ae3"
+                    class="card-img-top" alt="Project 6">
+                  <div class="card-body">
+                    <h5 class="card-title">Project 6</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+    <h2 class="text-center">Contact Me</h2>
+    <p class="text-center">Feel free to reach out for collaboration or any inquiries.</p>
+    <div class="row justify-content-center ">
+      <div class="col-md-6">
+    <form class="contact-form ">
+      <!-- <label for="name">Your Name:</label> -->
+      <input class="form-control mb-3" type="text" id="name" name="name" placeholder="Your Name" required>
+      <!-- <label for="email">Your Email:</label> -->
+      <input class="form-control mb-3" type="email" id="email" name="email" placeholder="Your Email" required>
+      <!-- <label for="message">Your Message:</label> -->
+      <textarea class="form-control mb-3" id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button id="submit-btn" class="text-center btn btn-success" type="submit">Send Message</button>
+    </form>
+  </div>
+  </div>
+  </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p class ="text-center bg-dark text-light py-5 fs-3" style="height: 130px;">&copy; 2023 My Portfolio. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>
