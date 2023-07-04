@@ -1,0 +1,5 @@
+A demo social media webpage is created using bootstrap which implements the features of:-
+HTML
+CSS
+Bootstrap
+and has Navbars, Cards, Modals and many other techniques of bootstraps used.
